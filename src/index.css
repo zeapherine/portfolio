@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+	/* background-image: linear-gradient(to right bottom, #2c3e50, #3498db); */
+	background-color: #c7d3d4ff;
+	background-attachment: fixed;
+	margin: 2rem;
+}
+
+a {
+	text-decoration: none;
+	color: #354548;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #151379;
+}
+
+.row {
+	height: 90vh;
+}
+
+.app_main-content {
+	height: auto;
+	border-radius: 20px;
+	padding: 25px 15px;
+	text-align: center;
+	font-family: 'Nunito Sans';
+	background: linear-gradient(145deg, #79aacb, #8fcaf1);
+	box-shadow: 6px 6px 19px #54778e, -6px -6px 19px #b8ffff;
+}
+
+/* Sidebar */
+
+.sidebar {
+	height: 100%;
+	border-radius: 20px;
+	padding: 25px 15px;
+	text-align: center;
+	font-family: 'Nunito Sans';
+
+	/* box-shadow: 0 0 10px #12fff7; */
+	background: linear-gradient(145deg, #79aacb, #8fcaf1);
+	box-shadow: 6px 6px 19px #54778e, -6px -6px 19px #b8ffff;
+}
+
+.sidebar_avatar {
+	height: 110px;
+	width: 110px;
+	object-fit: contain;
+	border-radius: 50%;
+}
+
+.sidebar_icon {
+	width: 45px;
+	height: 25px;
+	color: #3498db;
+}
+
+.facebook_icon,
+.instagram_icon {
+	margin: 20px 0;
+	width: 40px;
+	height: 40px;
+	box-shadow: 5px 5px 10px #6088a2, -5px -5px 10px #acf2ff;
+}
+
+.facebook_icon:hover,
+.instagram_icon:hover {
+	background: linear-gradient(145deg, #79aacb, #8fcaf1);
+	box-shadow: 6px 6px 12px #5c829b, -6px -6px 12px #b0f8ff;
+}
+
+.sidebar_name {
+	font-family: 'Kaushan Script';
+	font-size: 1.7rem;
+	margin: 20px 0;
+}
+
+.sidebar_name > span {
+	color: #271dd3;
+}
+
+.sidebar_item {
+	margin-bottom: 6px;
+	padding-top: 6px;
+	height: 40px;
+	font-size: 1rem;
+	border-radius: 30px;
+}
+
+.sidebar_title {
+	/* background-color: #86bde1; */
+	border-radius: 30px;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.sidebar_contact {
+	/* background-color: #dbdddf; */
+	margin: 40px 0;
+	border-radius: 31px;
+	background: #86bde1;
+	box-shadow: inset 7px 7px 14px #6d99b6, inset -7px -7px 14px #9fe1ff;
+}
+
+.sidebar_email {
+	/* margin: 15px 25px 0; */
+	cursor: pointer;
+}
+
+.sidebar_email:hover,
+.sidebar_email,
+.sidebar_github,
+.sidebar_resume {
+	background: linear-gradient(145deg, #8fcaf1, #79aacb);
+	box-shadow: 10px 10px 20px #6d99b6, -10px -10px 20px #9fe1ff;
+	width: fit-content;
+	display: inline-block;
+	padding: 10px;
+}
+
+.sidebar_email:hover,
+.sidebar_github:hover,
+.sidebar_resume:hover {
+	background: linear-gradient(145deg, #79aacb, #8fcaf1);
+	box-shadow: 10px 10px 20px #6d99b6, -10px -10px 20px #9fe1ff;
+}
+
+@media (max-width: 991px) {
+	.app_main-content {
+		margin: 30px 20px;
+	}
+}
+
+/* Navbar */
+
+.navbar_items {
+	display: flex;
+}
+
+.navbar_active {
+	font-weight: bold;
+	font-size: 2rem;
+	text-decoration: solid underline #271dd3 4px;
+	text-underline-offset: 10px;
+}
+
+.navbar_item {
+	font-weight: 600;
+	font-size: 1.2rem;
+	margin: 10px;
+}
+
+.navbar_item:hover {
+	color: #603f83ff;
+}
+
+/* about */
+.about {
+	text-align: left;
+	margin: 30px;
+}
+
+.about_intro {
+	font-size: 1.2rem;
+	color: #603f83ff;
+	padding: 2rem 3rem;
+	border-radius: 31px;
+	background: #86bde1;
+	box-shadow: inset 7px 7px 14px #6d99b6, inset -7px -7px 14px #9fe1ff;
+}
+/* skill card */
+.about_heading {
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: #271dd3;
+}
+
+.card_collection_container {
+	height: auto;
+	display: flex;
+}
+
+.skill-card {
+	height: 90%;
+	margin: 10px;
+	padding: 15px;
+	display: flex;
+	flex-direction: row;
+	border-radius: 10px;
+	background: #86bde1;
+	box-shadow: inset 7px 7px 14px #6d99b6, inset -7px -7px 14px #9fe1ff;
+}
+
+.skill-card_icon {
+	width: 40px;
+	height: 40px;
+}
+.skill_card_body {
+	margin-left: 15px;
+}
+
+.skill_card_title {
+	font-size: 1.2rem;
+}
+
+.skill_card_content {
+	margin: 0;
+	font-size: 0.9rem;
+}
+
+.line_break {
+	height: 10px;
+	width: 30%;
+	margin: 25px auto;
+	border-radius: 10px;
+	background: linear-gradient(145deg, #38617c, #156fac);
+	box-shadow: 15px 15px 25px #6d99b6, -10px -10px 20px #9fe1ff;
+}
