@@ -19,7 +19,7 @@ const skills = [
 		icon: repair,
 		title: 'Backend  Development',
 		about:
-			'handle database, server, api using and MongoDB, firebase and other non-relational Databases.',
+			'handle database, server api using and MongoDB, firebase and other non-relational Databases.',
 	},
 	{
 		id: 3,
