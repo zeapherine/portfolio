@@ -30,11 +30,6 @@ const languages = [
 		name: 'Javascript',
 		level: '50',
 	},
-	{
-		icon: react,
-		name: 'NodeJS',
-		level: '45s',
-	},
 ];
 
 const tools = [
@@ -85,7 +80,7 @@ const Resume = () => {
 			<div className='row skills-div'>
 				<div className='col-lg-6 resume-languages resume-div'>
 					<h5 className='resume-language-heading'>Languages and Frameworks</h5>
-					<div className='resume-language-body'>
+					<div className='resume-language-body mt-3'>
 						{languages.map((language) => (
 							<Bar value={language} />
 						))}
@@ -94,7 +89,7 @@ const Resume = () => {
 
 				<div className='col-lg-6 resume-languages resume-div'>
 					<h5 className='resume-language-heading'>Tools and Softwares</h5>
-					<div className='resume-language-body'>
+					<div className='resume-language-body mt-3'>
 						{tools.map((tool) => (
 							<Bar value={tool} />
 						))}

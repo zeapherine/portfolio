@@ -59,7 +59,7 @@ const SideBar = () => {
 				<div className='sidebar_item '>+91 9365046884</div>
 				<div className='sidebar_item sidebar_github  py-2'>
 					<a href=''>
-						<img src={github} alt='github' className='sidebar_icon mr-3' />
+						<img src={github} alt='github' className='sidebar_icon mr-1' />
 						github
 					</a>
 				</div>
