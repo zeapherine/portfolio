@@ -51,7 +51,7 @@ const SideBar = () => {
 
 			<div className='sidebar_contact py-3'>
 				<div className='sidebar_location py-2'>
-					<img src={pin} alt='location' className='sidebar_icon mr-3' />
+					<img src={pin} alt='location' className='sidebar_icon' />
 					Assam, India
 				</div>
 

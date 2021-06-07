@@ -100,6 +100,7 @@ a:hover {
 
 .sidebar_contact {
 	/* background-color: #dbdddf; */
+	text-align: center;
 	margin: 40px 0;
 	border-radius: 31px;
 	background: #86bde1;
@@ -198,6 +199,9 @@ a:hover {
 .skill-card_icon {
 	width: 40px;
 	height: 40px;
+	width: 45px;
+	height: 25px;
+	color: #3498db;
 }
 .skill_card_body {
 	margin-left: 15px;
@@ -219,4 +223,87 @@ a:hover {
 	border-radius: 10px;
 	background: linear-gradient(145deg, #38617c, #156fac);
 	box-shadow: 15px 15px 25px #6d99b6, -10px -10px 20px #9fe1ff;
+}
+
+/* Resume*/
+
+.resume {
+	/* padding-top: 20px; */
+	margin-top: 25px;
+}
+
+.resume > .row {
+	height: auto;
+}
+
+/* Qualification */
+
+.shillong {
+	width: 35px;
+	height: 20px;
+}
+
+.resume-div {
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+.resume-div h2 {
+	font-weight: 600;
+}
+
+.qualification-details {
+	margin-top: 15px;
+	padding-left: 20px;
+}
+
+/* Skills and frameworks */
+
+.bar-icon {
+	width: 35px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.resume-language-heading {
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+
+.resume-languages {
+	margin-top: 15px;
+}
+
+.bar {
+	background-color: #fff;
+	border-radius: 20px;
+	margin: 20px 20px;
+	height: 35px;
+}
+
+.bar-wrapper {
+	width: 50%;
+	height: 35px;
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: rgb(27, 64, 163);
+	overflow: hidden;
+
+	border-radius: 20px;
+
+	background: #e69a8d;
+	box-shadow: inset 20px 20px 30px #c18176, inset -20px -20px 30px #ffb3a4;
+}
+
+.bar-name {
+	font-size: 1rem;
+}
+
+.resume-language-body {
+	margin: 35px 5px;
+	padding: 20px;
+	border-radius: 60px;
+	background: #6d99b6;
+	box-shadow: 20px 20px 30px #5c8199, -20px -20px 30px #7eb1d3;
 }

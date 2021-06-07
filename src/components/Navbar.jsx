@@ -11,10 +11,10 @@ const Navbar = () => {
 			setActive('About');
 		} else if (location.pathname === '/projects') {
 			setActive('Projects');
-		} else if (location.pathname === '/Resume') {
+		} else if (location.pathname === '/resume') {
 			setActive('Resume');
 		}
-	}, [active]);
+	}, [location]);
 
 	return (
 		<div className='navbar'>
@@ -23,24 +23,18 @@ const Navbar = () => {
 			<div className='navbar_items'>
 				{active !== 'About' && (
 					<Link to='/'>
-						<div className='navbar_item' onClick={() => setActive('About')}>
-							About
-						</div>
+						<div className='navbar_item'>About</div>
 					</Link>
 				)}
 				{active !== 'Resume' ? (
 					<Link to='/resume'>
-						<div className='navbar_item' onClick={() => setActive('Resume')}>
-							Resume
-						</div>
+						<div className='navbar_item'>Resume</div>
 					</Link>
 				) : null}
 
 				{active !== 'Projects' && (
 					<Link to='/projects'>
-						<div className='navbar_item' onClick={() => setActive('Projects')}>
-							Projects
-						</div>
+						<div className='navbar_item'>Projects</div>
 					</Link>
 				)}
 			</div>

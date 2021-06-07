@@ -1,7 +1,11 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+
 import SideBar from './components/SideBar';
 import Navbar from './components/Navbar';
 import About from './components/About';
+import Resume from './components/Resume';
+import Projects from './components/Projects';
 
 function App() {
 	return (
@@ -13,7 +17,17 @@ function App() {
 					</div>
 					<div className='col-lg-9 app_main-content'>
 						<Navbar />
-						<About />
+						<Switch>
+							<Route exact path='/'>
+								<About />
+							</Route>
+							<Route exact path='/resume'>
+								<Resume />
+							</Route>
+							<Route exact path='/projects'>
+								<Projects />
+							</Route>
+						</Switch>
 					</div>
 				</div>
 			</div>
