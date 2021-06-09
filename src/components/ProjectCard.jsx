@@ -4,7 +4,7 @@ import github from '../assets/icons/github.svg';
 import Modal from './Modal';
 
 const ProjectCard = ({
-	project: { name, image, deployed_url, github_url },
+	project: { name, image, deployed_url, github_url, discription },
 }) => {
 	const [modalShown, toggleModal] = useState(false);
 	return (
@@ -25,9 +25,8 @@ const ProjectCard = ({
 						close={() => {
 							toggleModal(false);
 						}}
-					>
-						<h1>Look! I'm inside the modal!</h1>
-					</Modal>
+						content={{ name, image, deployed_url, discription }}
+					></Modal>
 				)}
 
 				<div className='project-card-title p-2 '>

@@ -1,6 +1,10 @@
 import React from 'react';
 
-const Modal = ({ children, shown, close }) => {
+const Modal = ({
+	content: { name, image, deployed_url, discription },
+	shown,
+	close,
+}) => {
 	return shown ? (
 		<div
 			className='modal-backdrop'
@@ -16,10 +20,20 @@ const Modal = ({ children, shown, close }) => {
 					e.stopPropagation();
 				}}
 			>
-				<h5>todo:Project Description section</h5>
-				<p>Todo: Link to live project</p>
-				<div className='modal-close' onClick={close}>
-					Close
+				<div className='modal-div'>
+					<img src={image} alt='name' />
+
+					<h3>{name}</h3>
+
+					<p>{discription}</p>
+
+					<a className='live-site-link' href={deployed_url}>
+						link to live site
+					</a>
+
+					<a className='modal-close' onClick={close}>
+						X
+					</a>
 				</div>
 			</div>
 		</div>

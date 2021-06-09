@@ -15,6 +15,8 @@ const data_projects = [
 		deployed_url: '',
 		github_url: '',
 		category: ['react.js'],
+		discription:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
 	},
 
 	{
@@ -23,6 +25,8 @@ const data_projects = [
 		deployed_url: '',
 		github_url: '',
 		category: ['node.js', 'mongoDB', 'react.js'],
+		discription:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
 	},
 
 	{
@@ -31,6 +35,8 @@ const data_projects = [
 		deployed_url: '',
 		github_url: '',
 		category: ['node', 'socket.io', 'react'],
+		discription:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
 	},
 
 	{
@@ -39,6 +45,8 @@ const data_projects = [
 		deployed_url: '',
 		github_url: '',
 		category: ['django', 'react'],
+		discription:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
 	},
 
 	{
@@ -46,6 +54,8 @@ const data_projects = [
 		image: hardware_store,
 		deployed_url: '!#',
 		category: ['html_css', 'vanilla'],
+		discription:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
 	},
 
 	{
@@ -53,6 +63,8 @@ const data_projects = [
 		image: portfolio,
 		deployed_url: '',
 		category: ['vanilla'],
+		discription:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
 	},
 
 	{
@@ -60,6 +72,8 @@ const data_projects = [
 		image: new_year,
 		deployed_url: '',
 		category: ['vanilla'],
+		discription:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
 	},
 
 	{
@@ -68,6 +82,8 @@ const data_projects = [
 		deployed_url: '!#',
 		github_url: '',
 		category: ['node', 'machine_learning'],
+		discription:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
 	},
 
 	{
@@ -76,6 +92,8 @@ const data_projects = [
 		deployed_url: '',
 		github_url: '',
 		category: ['processing'],
+		discription:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
 	},
 ];
 
