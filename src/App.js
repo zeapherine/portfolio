@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Resume from './components/Resume';
 import Projects from './components/Projects';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import { AnimatePresence } from 'framer-motion';
 
 // const aboutVariants = {
