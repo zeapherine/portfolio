@@ -5,7 +5,7 @@ import pin from '../assets/icons/pin.svg';
 import tie from '../assets/icons/tie.svg';
 import linkedin from '../assets/icons/linkedin.png';
 import resume from '../assets/resume.pdf';
-import avatar from '../assets/avatar.jpeg';
+import avatar from '../assets/avatar.webp';
 
 import { motion } from 'framer-motion';
 

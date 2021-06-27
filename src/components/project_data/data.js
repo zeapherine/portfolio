@@ -1,15 +1,15 @@
-import memories from '../../assets/projects_images/memories-mern.png';
-import searchBar from '../../assets/projects_images/collapsable-search-bar.png';
-import drumKit from '../../assets/projects_images/drum-kit.png';
-import expandingCards from '../../assets/projects_images/expanding-cards.png';
-import microsoft from '../../assets/projects_images/miscrosoft-clone.png';
-import monster from '../../assets/projects_images/monster-rolodex.png';
-import instaLogin from '../../assets/projects_images/neumorphic-insta-login-clone.png';
-import pizzaJoint from '../../assets/projects_images/pizza-hut.png';
-import progressSteps from '../../assets/projects_images/progress-steps.png';
-import rotationalNavigation from '../../assets/projects_images/rotational-navigation.png';
-import tinDog from '../../assets/projects_images/tinDog.png';
-import crownClothing from '../../assets/projects_images/crown-clothing.png';
+import memories from '../../assets/projects_images/memories-mern.webp';
+import searchBar from '../../assets/projects_images/collapsable-search-bar.webp';
+import drumKit from '../../assets/projects_images/drum-kit.webp';
+import expandingCards from '../../assets/projects_images/expanding-cards.webp';
+import microsoft from '../../assets/projects_images/miscrosoft-clone.webp';
+import monster from '../../assets/projects_images/monster-rolodex.webp';
+import instaLogin from '../../assets/projects_images/neumorphic-insta-login-clone.webp';
+import pizzaJoint from '../../assets/projects_images/pizza-hut.webp';
+import progressSteps from '../../assets/projects_images/progress-steps.webp';
+import rotationalNavigation from '../../assets/projects_images/rotational-navigation.webp';
+import tinDog from '../../assets/projects_images/tinDog.webp';
+import crownClothing from '../../assets/projects_images/crown-clothing.webp';
 
 const data_projects = [
 	{
