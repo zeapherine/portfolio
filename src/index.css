@@ -196,10 +196,10 @@ a:hover {
 }
 
 .about_intro {
-	font-size: 1.1rem;
+	font-size: 1.1em;
 	font-weight: 600;
 	color: #162447;
-	padding: 2rem 3rem;
+	padding: 2em 3em;
 	border-radius: 31px;
 	border: 1px solid #0779e4;
 	background: #dde1e7;
@@ -232,9 +232,22 @@ a:hover {
 }
 
 @media (max-width: 504px) {
+	.about {
+		margin: 0;
+	}
+
+	.about_intro {
+		padding: 15px;
+	}
+	.about_container {
+		padding: 0;
+		margin: 0;
+	}
 	.skill-card {
 		display: flex;
 		flex-direction: column;
+		margin: 10px 0;
+		padding: 10px;
 	}
 }
 
