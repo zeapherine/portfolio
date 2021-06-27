@@ -15,7 +15,7 @@ import javascript from '../assets/icons/javascript.png';
 import figma from '../assets/icons/figma.png';
 import framer from '../assets/icons/framer.png';
 
-import { fadeInUp, routeAnimation } from '../animation';
+import { routeAnimation } from '../animation';
 
 const languages = [
 	{
@@ -78,6 +78,20 @@ const tools = [
 	},
 ];
 
+const resumeAnimation = {
+	initial: {
+		opacity: 0,
+		y: 100,
+	},
+	animate: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			delay: 0.7,
+		},
+	},
+};
+
 const Resume = () => {
 	return (
 		<motion.div
@@ -88,12 +102,7 @@ const Resume = () => {
 			className='container resume'
 		>
 			<div className='row'>
-				<motion.div
-					className='resume-div col-lg-6'
-					variants={fadeInUp}
-					initial='initial'
-					animate='animate'
-				>
+				<motion.div className='resume-div col-lg-6' variants={resumeAnimation}>
 					<h2>Education</h2>
 					<div className='qualification-details'>
 						<h4>B.Sc Computer Science</h4>
@@ -104,12 +113,7 @@ const Resume = () => {
 						</p>
 					</div>
 				</motion.div>
-				<motion.div
-					className='resume-div col-lg-6'
-					variants={fadeInUp}
-					initial='initial'
-					animate='animate'
-				>
+				<motion.div className='resume-div col-lg-6' variants={resumeAnimation}>
 					<h2>Experience</h2>
 					<div className='qualification-details'>
 						<h4>Freelancer</h4>

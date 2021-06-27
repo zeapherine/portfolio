@@ -33,6 +33,7 @@ export const routeAnimation = {
 		opacity: 0,
 		transition: {
 			delay: 0.1,
+			when: 'beforeChildren',
 			ease: 'easeInOut',
 		},
 	},

@@ -33,6 +33,20 @@ const skills = [
 	},
 ];
 
+const aboutAnimation = {
+	initial: {
+		opacity: 0,
+		y: 100,
+	},
+	animate: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			delay: 0.7,
+		},
+	},
+};
+
 const About = () => {
 	return (
 		<motion.div
@@ -43,10 +57,12 @@ const About = () => {
 			className='about'
 		>
 			<div className='about_intro'>
-				Hi! I am a person who loves to code and persistent at solving problems
-				with code. I am a quick learner and always trying out new technologies.
-				Aside from my love for technologies I also love nature and like to
-				travel and immerse my self in different cultures.
+				<motion.div variants={aboutAnimation}>
+					Hi! I am a person who loves to code and persistent at solving problems
+					with code. I am a quick learner and always trying out new
+					technologies. Aside from my love for technologies I also love nature
+					and like to travel and immerse my self in different cultures.
+				</motion.div>
 			</div>
 
 			<div className='container about_container'>
