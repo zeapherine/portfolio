@@ -24,7 +24,7 @@ a:hover {
 }
 
 .app_main-content {
-	height: 90vh;
+	height: auto;
 	border-radius: 20px;
 	border: 2px solid #271dd3;
 	padding: 25px 15px;
@@ -33,6 +33,12 @@ a:hover {
 
 	background: #dde1e7;
 	box-shadow: 21px 21px 43px #a8abb0, -21px -21px 43px #ffffff;
+}
+
+@media (max-width: 1500px) {
+	.app_main-content {
+		margin: 30px 20px;
+	}
 }
 
 /* Sidebar */
@@ -154,13 +160,6 @@ a:hover {
 .sidebar_github:active,
 .sidebar_resume:active {
 	border: 4px solid #0d4880;
-}
-
-@media (max-width: 991px) {
-	.app_main-content {
-		margin: 30px 20px;
-		height: auto;
-	}
 }
 
 /* Navbar */
