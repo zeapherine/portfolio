@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
 
 import data_projects from './project_data/data';
+import { fadeInUp, stagger, routeAnimation } from '../animation';
 
 const Projects = () => {
 	const [projects, setProjects] = useState(data_projects);
@@ -14,35 +15,12 @@ const Projects = () => {
 		setProjects(newArray);
 	};
 
-	const projectsVariants = {
-		hidden: {
-			opacity: 0,
-		},
-		visible: {
-			opacity: 1,
-			transition: {
-				delay: 0.2,
-				duration: 0.6,
-				when: 'beforeChildren',
-				staggerChildren: 1,
-			},
-		},
-	};
-
-	const projectVariants = {
-		hidden: {
-			opacity: 0,
-		},
-		visible: {
-			opacity: 1,
-		},
-	};
-
 	return (
 		<motion.div
-			variants={projectsVariants}
-			initial='hidden'
-			animate='visible'
+			variants={routeAnimation}
+			initial='initial'
+			animate='animate'
+			exit='exit'
 			className='container projects'
 		>
 			<div className='projects-navbar'>
@@ -53,9 +31,20 @@ const Projects = () => {
 				<div onClick={() => handleFilterProjects('mongoDB')}>MongoDB</div>
 			</div>
 
-			<motion.div variants={projectVariants} className='row'>
+			<motion.div
+				variants={stagger}
+				initial='initial'
+				animate='animate'
+				className='row'
+			>
 				{projects.map((project) => (
-					<ProjectCard key={project.name} project={project} />
+					<motion.div
+						variants={fadeInUp}
+						className='project-card col-md-6 col-lg-4 my-3'
+						key={project.name}
+					>
+						<ProjectCard project={project} />
+					</motion.div>
 				))}
 			</motion.div>
 		</motion.div>

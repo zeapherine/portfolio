@@ -1,10 +1,21 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { stagger, fadeInUp } from '../animation';
 
 const Modal = ({
 	content: { name, image, deployed_url, discription, category },
 	shown,
 	close,
 }) => {
+	const variants = {
+		initial: {
+			opacity: 0,
+		},
+		animate: {
+			opacity: 1,
+		},
+	};
+
 	return shown ? (
 		<div
 			className='modal-backdrop'
@@ -13,36 +24,44 @@ const Modal = ({
 				close();
 			}}
 		>
-			<div
+			<motion.div
+				variants={variants}
+				initial='initial'
+				animate='animate'
 				className='modal-content'
 				onClick={(e) => {
 					// do not close modal if anything inside modal content is clicked
 					e.stopPropagation();
 				}}
 			>
-				<div className='modal-div'>
-					<img src={image} alt='name' />
+				<motion.div variants={stagger} className='modal-div'>
+					<motion.img variants={fadeInUp} src={image} alt='name' />
 
-					<h3>{name}</h3>
-					<p>{discription}</p>
+					<motion.h3 variants={fadeInUp}>{name}</motion.h3>
+					<motion.p variants={fadeInUp}>{discription}</motion.p>
 
-					<div className='tech-tags-container'>
+					<motion.div variants={stagger} className='tech-tags-container'>
 						{category.map((tag) => (
-							<p className='tech-tags' key={tag}>
+							<motion.p variants={fadeInUp} className='tech-tags' key={tag}>
 								{tag}
-							</p>
+							</motion.p>
 						))}
-					</div>
+					</motion.div>
 
-					<a className='live-site-link' href={deployed_url} target='blank'>
+					<motion.a
+						variants={fadeInUp}
+						className='live-site-link'
+						href={deployed_url}
+						target='blank'
+					>
 						Live App
-					</a>
+					</motion.a>
 
-					<a className='modal-close' onClick={close}>
+					<motion.a variants={fadeInUp} className='modal-close' onClick={close}>
 						X
-					</a>
-				</div>
-			</div>
+					</motion.a>
+				</motion.div>
+			</motion.div>
 		</div>
 	) : null;
 };

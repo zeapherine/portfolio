@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import Bar from './Bar';
 import git from '../assets/icons/github.svg';
@@ -13,6 +14,8 @@ import css from '../assets/icons/css.png';
 import javascript from '../assets/icons/javascript.png';
 import figma from '../assets/icons/figma.png';
 import framer from '../assets/icons/framer.png';
+
+import { fadeInUp, routeAnimation } from '../animation';
 
 const languages = [
 	{
@@ -77,9 +80,20 @@ const tools = [
 
 const Resume = () => {
 	return (
-		<div className='container resume'>
+		<motion.div
+			variants={routeAnimation}
+			initial='initial'
+			animate='animate'
+			exit='exit'
+			className='container resume'
+		>
 			<div className='row'>
-				<div className='resume-div col-lg-6'>
+				<motion.div
+					className='resume-div col-lg-6'
+					variants={fadeInUp}
+					initial='initial'
+					animate='animate'
+				>
 					<h2>Education</h2>
 					<div className='qualification-details'>
 						<h4>B.Sc Computer Science</h4>
@@ -89,8 +103,13 @@ const Resume = () => {
 							<img src={pin} alt='location' className='shillong' />
 						</p>
 					</div>
-				</div>
-				<div className='resume-div col-lg-6'>
+				</motion.div>
+				<motion.div
+					className='resume-div col-lg-6'
+					variants={fadeInUp}
+					initial='initial'
+					animate='animate'
+				>
 					<h2>Experience</h2>
 					<div className='qualification-details'>
 						<h4>Freelancer</h4>
@@ -99,7 +118,7 @@ const Resume = () => {
 							various projects using different web technologies.
 						</p>
 					</div>
-				</div>
+				</motion.div>
 			</div>
 
 			<div className='row skills-div'>
@@ -121,7 +140,7 @@ const Resume = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

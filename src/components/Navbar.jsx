@@ -20,15 +20,15 @@ const Navbar = () => {
 
 	const navbarVariants = {
 		hidden: {
-			y: '-30vw',
+			opacity: 0,
 		},
 		visible: {
-			y: 0,
+			opacity: 1,
 			transform: {
 				transition: {
-					delay: 0.2,
-					type: 'spring',
-					duration: 0.7,
+					delay: 0.5,
+
+					duration: 0.5,
 				},
 			},
 		},

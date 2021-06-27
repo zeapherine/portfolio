@@ -8,39 +8,37 @@ const ProjectCard = ({
 }) => {
 	const [modalShown, toggleModal] = useState(false);
 	return (
-		<div className='project-card col-md-6 col-lg-4 my-3 '>
-			<figure className='project-card-wrapper pb-5'>
-				<img
-					src={image}
-					alt={name}
-					className='project-card-image p-2'
-					onClick={() => {
-						toggleModal(!modalShown);
+		<figure className='project-card-wrapper pb-5'>
+			<img
+				src={image}
+				alt={name}
+				className='project-card-image p-2'
+				onClick={() => {
+					toggleModal(!modalShown);
+				}}
+			/>
+
+			{modalShown && (
+				<Modal
+					shown={modalShown}
+					close={() => {
+						toggleModal(false);
 					}}
-				/>
+					content={{ name, image, deployed_url, discription, category }}
+				></Modal>
+			)}
 
-				{modalShown && (
-					<Modal
-						shown={modalShown}
-						close={() => {
-							toggleModal(false);
-						}}
-						content={{ name, image, deployed_url, discription, category }}
-					></Modal>
-				)}
-
-				<div className='project-card-title p-2 '>
-					<a href={github_url} target='blank'>
-						<img
-							src={github}
-							alt='github icon'
-							className='project-card-icon m-3 '
-						/>
-					</a>
-					{name}
-				</div>
-			</figure>
-		</div>
+			<div className='project-card-title p-2 '>
+				<a href={github_url} target='blank'>
+					<img
+						src={github}
+						alt='github icon'
+						className='project-card-icon m-3 '
+					/>
+				</a>
+				{name}
+			</div>
+		</figure>
 	);
 };
 
