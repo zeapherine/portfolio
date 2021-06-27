@@ -5,6 +5,7 @@ import pin from '../assets/icons/pin.svg';
 import tie from '../assets/icons/tie.svg';
 import linkedin from '../assets/icons/linkedin.png';
 import resume from '../assets/resume.pdf';
+import avatar from '../assets/avatar.jpeg';
 
 import { motion } from 'framer-motion';
 
@@ -30,11 +31,7 @@ const SideBar = () => {
 			animate='visible'
 			className='sidebar'
 		>
-			<img
-				src='https://media-exp1.licdn.com/dms/image/C5103AQFa9B8NIwRYzA/profile-displayphoto-shrink_800_800/0/1541026243775?e=1628726400&v=beta&t=k_XG0S9EkF-pH6c5Q9JqXwLZ8kCIa_KqwaGtGMbNVJ0'
-				alt='avatar'
-				className='sidebar_avatar'
-			/>
+			<img src={avatar} alt='avatar' className='sidebar_avatar' />
 			<div className='sidebar_name'>
 				Zeapherine <span>Islary</span>
 			</div>
