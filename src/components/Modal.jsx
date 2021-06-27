@@ -35,6 +35,9 @@ const Modal = ({
 				}}
 			>
 				<motion.div variants={stagger} className='modal-div'>
+					<motion.a variants={fadeInUp} className='modal-close' onClick={close}>
+						X
+					</motion.a>
 					<motion.img variants={fadeInUp} src={image} alt='name' />
 
 					<motion.h3 variants={fadeInUp}>{name}</motion.h3>
@@ -55,10 +58,6 @@ const Modal = ({
 						target='blank'
 					>
 						Live App
-					</motion.a>
-
-					<motion.a variants={fadeInUp} className='modal-close' onClick={close}>
-						X
 					</motion.a>
 				</motion.div>
 			</motion.div>
