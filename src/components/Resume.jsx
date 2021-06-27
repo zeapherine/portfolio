@@ -8,27 +8,42 @@ const languages = [
 	{
 		icon: react,
 		name: 'React',
-		level: '45',
-	},
-	{
-		icon: react,
-		name: 'Javascript',
-		level: '60',
-	},
-	{
-		icon: react,
-		name: 'NodeJS',
 		level: '80',
 	},
 	{
 		icon: react,
-		name: 'React',
-		level: '100',
+		name: 'NodeJS',
+		level: '50',
+	},
+	{
+		icon: react,
+		name: 'MongoDB',
+		level: '80',
+	},
+	{
+		icon: react,
+		name: 'Material UI',
+		level: '85',
+	},
+	{
+		icon: react,
+		name: 'Bootstrap',
+		level: '85',
+	},
+	{
+		icon: react,
+		name: 'HTML',
+		level: '89',
+	},
+	{
+		icon: react,
+		name: 'CSS',
+		level: '75',
 	},
 	{
 		icon: react,
 		name: 'Javascript',
-		level: '50',
+		level: '65',
 	},
 ];
 
@@ -36,12 +51,12 @@ const tools = [
 	{
 		icon: react,
 		name: 'Figma',
-		level: '85',
+		level: '40',
 	},
 	{
 		icon: react,
-		name: 'VS code',
-		level: '45',
+		name: 'Git',
+		level: '75',
 	},
 	{
 		icon: react,

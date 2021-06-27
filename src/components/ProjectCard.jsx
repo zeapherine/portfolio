@@ -30,7 +30,7 @@ const ProjectCard = ({
 				)}
 
 				<div className='project-card-title p-2 '>
-					<a href={github_url} target='_blank'>
+					<a href={github_url} target='blank'>
 						<img
 							src={github}
 							alt='github icon'

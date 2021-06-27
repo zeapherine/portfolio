@@ -5,6 +5,22 @@ import computer from '../assets/icons/computer.svg';
 import repair from '../assets/icons/repair.svg';
 
 import Skillcard from './Skillcard';
+import { motion } from 'framer-motion';
+
+const aboutVariants = {
+	hidden: {
+		opacity: 0,
+		x: '100vw',
+	},
+	visible: {
+		opacity: 1,
+		x: 0,
+		transition: {
+			type: 'tween',
+			delay: 0.5,
+		},
+	},
+};
 
 const skills = [
 	{

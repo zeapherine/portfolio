@@ -1,15 +1,35 @@
 import React from 'react';
-import facebook from '../assets/icons/facebook.svg';
-import instagram from '../assets/icons/instagram.svg';
+import twitter from '../assets/icons/twitter.png';
 import github from '../assets/icons/github.svg';
 import pin from '../assets/icons/pin.svg';
 import tie from '../assets/icons/tie.svg';
-import linkedin from '../assets/icons/linkedin.svg';
+import linkedin from '../assets/icons/linkedin.png';
 import resume from '../assets/resume.pdf';
 
+import { motion } from 'framer-motion';
+
 const SideBar = () => {
+	const slidebarVariant = {
+		initial: {
+			x: '-20vw',
+		},
+		visible: {
+			x: 0,
+
+			transition: {
+				delay: 0.1,
+				duration: 0.5,
+				type: 'spring',
+			},
+		},
+	};
 	return (
-		<div className='sidebar'>
+		<motion.div
+			variants={slidebarVariant}
+			initial='initial'
+			animate='visible'
+			className='sidebar'
+		>
 			<img
 				src='https://media-exp1.licdn.com/dms/image/C5103AQFa9B8NIwRYzA/profile-displayphoto-shrink_800_800/0/1541026243775?e=1628726400&v=beta&t=k_XG0S9EkF-pH6c5Q9JqXwLZ8kCIa_KqwaGtGMbNVJ0'
 				alt='avatar'
@@ -26,21 +46,17 @@ const SideBar = () => {
 				</div>
 			</a>
 			<figure className='sidebar_social-icons my-4'>
-				<a href=''>
+				<a href='https://twitter.com/zeapherine' target='blank'>
 					<img
-						src={facebook}
-						alt='facebook'
-						className='sidebar_icon facebook_icon mr-3'
-					/>
-				</a>
-				<a href=''>
-					<img
-						src={instagram}
-						alt='instagram'
+						src={twitter}
+						alt='twitter'
 						className='sidebar_icon instagram_icon mr-3'
 					/>
 				</a>
-				<a href=''>
+				<a
+					href='https://www.linkedin.com/in/zeapherine-islary-a8055a174/'
+					target='blank'
+				>
 					<img
 						src={linkedin}
 						alt='linkedIn'
@@ -58,16 +74,18 @@ const SideBar = () => {
 				<div className='sidebar_item '>zeapherine@gmail.com</div>
 				<div className='sidebar_item '>+91 9365046884</div>
 				<div className='sidebar_item sidebar_github  py-2'>
-					<a href=''>
+					<a href='https://github.com/zeapherine' target='blank'>
 						<img src={github} alt='github' className='sidebar_icon mr-1' />
 						github
 					</a>
 				</div>
 			</div>
 			<div className='sidebar_item sidebar_email'>
-				<a href='mailto:zeapherine@gmail.com'>Email Me</a>
+				<a href='mailto:zeapherine@gmail.com' target='blank'>
+					Email Me
+				</a>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

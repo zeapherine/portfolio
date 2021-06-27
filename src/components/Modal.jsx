@@ -27,7 +27,7 @@ const Modal = ({
 
 					<p>{discription}</p>
 
-					<a className='live-site-link' href={deployed_url}>
+					<a className='live-site-link' href={deployed_url} target='blank'>
 						link to live site
 					</a>
 

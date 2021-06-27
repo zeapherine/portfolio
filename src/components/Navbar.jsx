@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useHistory } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
 	const location = useLocation();
@@ -17,8 +18,29 @@ const Navbar = () => {
 		}
 	}, [location]);
 
+	const navbarVariants = {
+		hidden: {
+			y: '-30vw',
+		},
+		visible: {
+			y: 0,
+			transform: {
+				transition: {
+					delay: 0.2,
+					type: 'spring',
+					duration: 0.7,
+				},
+			},
+		},
+	};
+
 	return (
-		<div className='navbar'>
+		<motion.div
+			variants={navbarVariants}
+			initial='hidden'
+			animate='visible'
+			className='navbar'
+		>
 			<div className='navbar_active'>{active}</div>
 
 			<div className='navbar_items'>
@@ -45,7 +67,7 @@ const Navbar = () => {
 					</Link>
 				)}
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

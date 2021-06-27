@@ -1,99 +1,117 @@
-import tweetme from '../../assets/projects_images/tweetme.PNG';
-import chatapp from '../../assets/projects_images/chatapp.JPG';
-import hardware_store from '../../assets/projects_images/hardware_store.jpg';
-import portfolio from '../../assets/projects_images/portfolio.JPG';
-import new_year from '../../assets/projects_images/new_year.jpg';
-import color_classification from '../../assets/projects_images/color_classification.jpg';
-import blinking from '../../assets/projects_images/blinking.JPG';
-import COVID from '../../assets/projects_images/COVID.jpg';
-import Dev_talks from '../../assets/projects_images/Dev_talks.jpg';
+import memories from '../../assets/projects_images/memories-mern.png';
+import searchBar from '../../assets/projects_images/collapsable-search-bar.png';
+import drumKit from '../../assets/projects_images/drum-kit.png';
+import expandingCards from '../../assets/projects_images/expanding-cards.png';
+import microsoft from '../../assets/projects_images/miscrosoft-clone.png';
+import monster from '../../assets/projects_images/monster-rolodex.png';
+import instaLogin from '../../assets/projects_images/neumorphic-insta-login-clone.png';
+import pizzaJoint from '../../assets/projects_images/pizza-hut.png';
+import progressSteps from '../../assets/projects_images/progress-steps.png';
+import rotationalNavigation from '../../assets/projects_images/rotational-navigation.png';
+import tinDog from '../../assets/projects_images/tinDog.png';
 
 const data_projects = [
 	{
-		name: 'COVID 19 tracker',
-		image: COVID,
-		deployed_url: '',
-		github_url: '',
-		category: ['react.js'],
+		name: 'MEMORIES',
+		image: memories,
+		deployed_url: 'https://world-memories-social.netlify.app/',
+		github_url: 'https://github.com/zeapherine/MERN-memoris-social-app',
+		category: ['react.js', 'node.js', 'mongoDB'],
 		discription:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+			'This is a full-stack MERN application using Redux as state management. Users can share their travel memories by uploading pictures. Some of the features include, Likes, comments, delete, edit on posts, search by titles or tags, pagginations.',
+	},
+	{
+		name: 'Rotational Navigation',
+		image: rotationalNavigation,
+		deployed_url: 'https://zeapherine.github.io/rotating-navigation/',
+		github_url: 'https://github.com/zeapherine/rotating-navigation',
+		category: ['vanilla'],
+		discription:
+			'App where Navigation rotate from the side and rotate the whole website',
+	},
+	{
+		name: 'Tin Dog',
+		image: tinDog,
+		deployed_url: 'https://zeapherine.github.io/tindog-landing-site/',
+		github_url: 'https://github.com/zeapherine/tindog-landing-site',
+		category: ['vanilla'],
+		discription: 'Tinder UI clone for Dogs',
 	},
 
 	{
-		name: 'Dev Talks',
-		image: Dev_talks,
-		deployed_url: '',
-		github_url: '',
-		category: ['node.js', 'mongoDB', 'react.js'],
-		discription:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+		name: 'Collapsable Search bar',
+		image: searchBar,
+		deployed_url: 'https://zeapherine.github.io/hidden-search-widget/',
+		github_url: 'https://github.com/zeapherine/hidden-search-widget',
+		category: ['vanilla'],
+		discription: 'A collabsable search widget',
 	},
 
 	{
-		name: 'Realtime Chat App',
-		image: chatapp,
-		deployed_url: '',
-		github_url: '',
-		category: ['node', 'socket.io', 'react'],
+		name: 'Drum Kit',
+		image: drumKit,
+		deployed_url: 'https://zeapherine.github.io/drumkit/',
+		github_url: 'https://github.com/zeapherine/drumkit',
+		category: ['vanilla'],
 		discription:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+			'A simple Drum Kit for playing various sounds with clicks and keyboard keys',
 	},
 
 	{
-		name: 'Tweeter Clone',
-		image: tweetme,
-		deployed_url: '',
-		github_url: '',
-		category: ['django', 'react'],
-		discription:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+		name: 'Expanding Cards',
+		image: expandingCards,
+		deployed_url: 'https://zeapherine.github.io/expanding-cards/',
+		github_url: 'https://github.com/zeapherine/expanding-cards',
+		category: ['vanilla'],
+		discription: 'An expandable cards on click using css and vanilla JS',
 	},
 
 	{
-		name: 'Shop Website',
-		image: hardware_store,
-		deployed_url: '!#',
+		name: 'Microsoft Landing Clone',
+		image: microsoft,
+		deployed_url: 'https://zeapherine.github.io/microsoft-landing-clone/',
+		github_url: 'https://github.com/zeapherine/microsoft-landing-clone',
 		category: ['html_css', 'vanilla'],
-		discription:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+		discription: 'Microsoft landing page clone using HTML and CSS',
 	},
 
 	{
-		name: 'Dev Portfolio',
-		image: portfolio,
-		deployed_url: '',
+		name: 'Monster Roledex',
+		image: monster,
+		deployed_url: 'https://zeapherine.github.io/monsters-rolodex/',
+		github_url: 'https://github.com/zeapherine/monsters-rolodex',
+		category: ['react.js'],
+		discription: 'Simple React App to search for monsters from an remote api',
+	},
+
+	{
+		name: 'Neumorphic Insta Login',
+		image: instaLogin,
+		deployed_url:
+			'https://zeapherine.github.io/instagram-login-ui-clone-Neumorphic/',
+		github_url:
+			'https://github.com/zeapherine/instagram-login-ui-clone-Neumorphic',
+		category: ['vanilla'],
+		discription: 'Neumorphic clone of intagram login UI using CSS',
+	},
+
+	{
+		name: 'Pizza Joint',
+		image: pizzaJoint,
+		deployed_url: 'https://zeapherine.github.io/framer-motion/',
+		github_url: 'https://github.com/zeapherine/framer-motion',
+		category: ['react.js'],
+		discription: 'A simple react app animation, using framer motion library',
+	},
+
+	{
+		name: 'Progress Steps',
+		image: progressSteps,
+		deployed_url: 'https://zeapherine.github.io/progress-step/',
+		github_url: 'https://github.com/zeapherine/progress-step',
 		category: ['vanilla'],
 		discription:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
-	},
-
-	{
-		name: 'Bengali New Year',
-		image: new_year,
-		deployed_url: '',
-		category: ['vanilla'],
-		discription:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
-	},
-
-	{
-		name: 'Color Classification using tf.js',
-		image: color_classification,
-		deployed_url: '!#',
-		github_url: '',
-		category: ['node', 'machine_learning'],
-		discription:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
-	},
-
-	{
-		name: 'Blinking bubbles',
-		image: blinking,
-		deployed_url: '',
-		github_url: '',
-		category: ['processing'],
-		discription:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+			'Step by step progress to be used in other projects, using vanillaJS',
 	},
 ];
 

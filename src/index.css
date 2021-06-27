@@ -377,6 +377,7 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	min-height: 160px;
+	max-height: 300px;
 	border-radius: 30px;
 	border: 1px solid #271dd3;
 	background: #dde1e7;
@@ -468,9 +469,11 @@ a:hover {
 }
 
 .modal-content {
-	width: 60%;
-	min-height: 600px;
-	max-width: auto;
+	width: 30%;
+	height: auto;
+
+	min-width: 400px;
+	max-width: 450px;
 	background-color: white;
 	padding: 25px;
 	align-items: center;
@@ -482,24 +485,25 @@ a:hover {
 
 .modal-div > img {
 	height: 250px;
-	width: auto;
+	width: 60%;
+	overflow: hidden;
 }
 
 .modal-div > h3 {
 	margin-top: 35px;
-	font-size: 2rem;
+	font-size: 2em;
 	font-weight: 700;
 }
 
 .modal-div > p {
 	padding: 50px;
-	font-size: 1.3rem;
+	font-size: 1em;
 }
 
 .live-site-link {
 	margin-bottom: 30px;
 	padding: 10px;
-	font-size: 1.2rem;
+	font-size: 1.2em;
 	border: 1px solid #0779e4;
 	background: linear-gradient(145deg, #ecf1f7, #c7cbd0);
 	box-shadow: 6px 6px 12px #a6a9ad, -6px -6px 12px #ffffff;
