@@ -9,8 +9,18 @@ import pizzaJoint from '../../assets/projects_images/pizza-hut.png';
 import progressSteps from '../../assets/projects_images/progress-steps.png';
 import rotationalNavigation from '../../assets/projects_images/rotational-navigation.png';
 import tinDog from '../../assets/projects_images/tinDog.png';
+import crownClothing from '../../assets/projects_images/crown-clothing.png';
 
 const data_projects = [
+	{
+		name: 'Crown Clothing ECommerce Site',
+		image: crownClothing,
+		deployed_url: 'https://crown-style-clothing.netlify.app/',
+		github_url: 'https://github.com/zeapherine/crown-clothing',
+		category: ['react.js', 'redux', 'firebase'],
+		discription:
+			'A full Stack Ecommerce React app, with all the functionalities like checkout, payment, carts and many more. This app is build using React and firebase',
+	},
 	{
 		name: 'MEMORIES',
 		image: memories,
