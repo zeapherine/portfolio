@@ -380,6 +380,18 @@ a:hover {
 	overflow-y: auto;
 }
 
+.projects::-webkit-scrollbar {
+	width: 15px;
+}
+.projects::-webkit-scrollbar-track {
+	background-color: #79aacb;
+	border-radius: 20px;
+}
+.projects::-webkit-scrollbar-thumb {
+	background-color: #0779e4;
+	border-radius: 20px;
+}
+
 .project-card-wrapper {
 	padding: 15px 5px;
 	margin: 10px 0;
