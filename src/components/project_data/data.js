@@ -17,7 +17,7 @@ const data_projects = [
 		image: crownClothing,
 		deployed_url: 'https://crown-style-clothing.netlify.app/',
 		github_url: 'https://github.com/zeapherine/crown-clothing',
-		category: ['react.js', 'redux', 'firebase'],
+		category: ['react.js', 'redux', 'firebase', 'stripe'],
 		discription:
 			'A full Stack Ecommerce React app, with all the functionalities like checkout, payment, carts and many more. This app is build using React and firebase',
 	},
@@ -26,7 +26,7 @@ const data_projects = [
 		image: memories,
 		deployed_url: 'https://world-memories-social.netlify.app/',
 		github_url: 'https://github.com/zeapherine/MERN-memoris-social-app',
-		category: ['react.js', 'node.js', 'mongoDB'],
+		category: ['react.js', 'node.js', 'mongoDB', 'mern'],
 		discription:
 			'This is a full-stack MERN application using Redux as state management. Users can share their travel memories by uploading pictures. Some of the features include, Likes, comments, delete, edit on posts, search by titles or tags, pagginations.',
 	},
@@ -35,16 +35,16 @@ const data_projects = [
 		image: rotationalNavigation,
 		deployed_url: 'https://zeapherine.github.io/rotating-navigation/',
 		github_url: 'https://github.com/zeapherine/rotating-navigation',
-		category: ['vanilla'],
+		category: ['vanilla', 'html', 'css'],
 		discription:
-			'App where Navigation rotate from the side and rotate the whole website',
+			'App where Navigation rotate from the side and rotate` the whole website',
 	},
 	{
 		name: 'Tin Dog',
 		image: tinDog,
 		deployed_url: 'https://zeapherine.github.io/tindog-landing-site/',
 		github_url: 'https://github.com/zeapherine/tindog-landing-site',
-		category: ['vanilla'],
+		category: ['vanilla', 'css', 'html'],
 		discription: 'Tinder UI clone for Dogs',
 	},
 
@@ -53,7 +53,7 @@ const data_projects = [
 		image: searchBar,
 		deployed_url: 'https://zeapherine.github.io/hidden-search-widget/',
 		github_url: 'https://github.com/zeapherine/hidden-search-widget',
-		category: ['vanilla'],
+		category: ['vanilla', 'css', 'html'],
 		discription: 'A collabsable search widget',
 	},
 
@@ -62,7 +62,7 @@ const data_projects = [
 		image: drumKit,
 		deployed_url: 'https://zeapherine.github.io/drumkit/',
 		github_url: 'https://github.com/zeapherine/drumkit',
-		category: ['vanilla'],
+		category: ['vanilla', 'css', 'html'],
 		discription:
 			'A simple Drum Kit for playing various sounds with clicks and keyboard keys',
 	},
@@ -72,7 +72,7 @@ const data_projects = [
 		image: expandingCards,
 		deployed_url: 'https://zeapherine.github.io/expanding-cards/',
 		github_url: 'https://github.com/zeapherine/expanding-cards',
-		category: ['vanilla'],
+		category: ['vanilla', 'css', 'html'],
 		discription: 'An expandable cards on click using css and vanilla JS',
 	},
 
@@ -81,7 +81,7 @@ const data_projects = [
 		image: microsoft,
 		deployed_url: 'https://zeapherine.github.io/microsoft-landing-clone/',
 		github_url: 'https://github.com/zeapherine/microsoft-landing-clone',
-		category: ['html_css', 'vanilla'],
+		category: ['html', 'css', 'vanilla'],
 		discription: 'Microsoft landing page clone using HTML and CSS',
 	},
 
@@ -101,7 +101,7 @@ const data_projects = [
 			'https://zeapherine.github.io/instagram-login-ui-clone-Neumorphic/',
 		github_url:
 			'https://github.com/zeapherine/instagram-login-ui-clone-Neumorphic',
-		category: ['vanilla'],
+		category: ['vanilla', 'css', 'html'],
 		discription: 'Neumorphic clone of intagram login UI using CSS',
 	},
 
@@ -110,7 +110,7 @@ const data_projects = [
 		image: pizzaJoint,
 		deployed_url: 'https://zeapherine.github.io/framer-motion/',
 		github_url: 'https://github.com/zeapherine/framer-motion',
-		category: ['react.js'],
+		category: ['react.js', 'framer-motion', 'animation'],
 		discription: 'A simple react app animation, using framer motion library',
 	},
 
@@ -119,7 +119,7 @@ const data_projects = [
 		image: progressSteps,
 		deployed_url: 'https://zeapherine.github.io/progress-step/',
 		github_url: 'https://github.com/zeapherine/progress-step',
-		category: ['vanilla'],
+		category: ['vanilla', 'css', 'html'],
 		discription:
 			'Step by step progress to be used in other projects, using vanillaJS',
 	},

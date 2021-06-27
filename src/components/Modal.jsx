@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Modal = ({
-	content: { name, image, deployed_url, discription },
+	content: { name, image, deployed_url, discription, category },
 	shown,
 	close,
 }) => {
@@ -24,11 +24,18 @@ const Modal = ({
 					<img src={image} alt='name' />
 
 					<h3>{name}</h3>
-
 					<p>{discription}</p>
 
+					<div className='tech-tags-container'>
+						{category.map((tag) => (
+							<p className='tech-tags' key={tag}>
+								{tag}
+							</p>
+						))}
+					</div>
+
 					<a className='live-site-link' href={deployed_url} target='blank'>
-						link to live site
+						Live App
 					</a>
 
 					<a className='modal-close' onClick={close}>

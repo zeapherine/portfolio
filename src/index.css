@@ -472,7 +472,6 @@ a:hover {
 .modal-content {
 	width: 30%;
 	height: auto;
-
 	min-width: 400px;
 	max-width: 450px;
 	background-color: white;
@@ -491,20 +490,23 @@ a:hover {
 }
 
 .modal-div > h3 {
-	margin-top: 35px;
+	margin-top: 25px;
 	font-size: 2em;
+	line-height: 1.5;
 	font-weight: 700;
 }
 
 .modal-div > p {
-	padding: 50px;
+	padding: 1em;
 	font-size: 1em;
 }
 
 .live-site-link {
 	margin-bottom: 30px;
+	border-radius: 25px;
 	padding: 10px;
 	font-size: 1.2em;
+	font-style: bold;
 	border: 1px solid #0779e4;
 	background: linear-gradient(145deg, #ecf1f7, #c7cbd0);
 	box-shadow: 6px 6px 12px #a6a9ad, -6px -6px 12px #ffffff;
@@ -534,4 +536,18 @@ a:hover {
 	border: 4px solid #0d4880;
 	background: #dde1e7;
 	box-shadow: inset 10px 10px 20px #a8abb0, inset -10px -10px 20px #ffffff;
+}
+
+.tech-tags-container {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 15px;
+}
+
+.tech-tags {
+	border-radius: 10px;
+	padding: 2px;
+	border: 1px solid #b7bbc0;
+
+	box-shadow: inset 12px 12px 24px #b7bbc0, inset -12px -12px 24px #ffffff;
 }
