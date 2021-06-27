@@ -35,7 +35,7 @@ a:hover {
 	box-shadow: 21px 21px 43px #a8abb0, -21px -21px 43px #ffffff;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 990px) {
 	.app_main-content {
 		margin: 30px 20px;
 	}
