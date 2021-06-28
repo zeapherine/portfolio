@@ -13,7 +13,7 @@ import crownClothing from '../../assets/projects_images/crown-clothing.webp';
 
 const data_projects = [
 	{
-		name: 'Crown Clothing ECommerce Site',
+		name: 'Clothing ECommerce Site',
 		image: crownClothing,
 		deployed_url: 'https://crown-style-clothing.netlify.app/',
 		github_url: 'https://github.com/zeapherine/crown-clothing',
