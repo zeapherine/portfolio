@@ -14,6 +14,7 @@ import css from '../assets/icons/css.png';
 import javascript from '../assets/icons/javascript.png';
 import figma from '../assets/icons/figma.png';
 import framer from '../assets/icons/framer.png';
+import redux from '../assets/icons/redux.jpeg';
 
 import { routeAnimation } from '../animation';
 
@@ -24,6 +25,12 @@ const languages = [
 		level: '80',
 	},
 	{
+		icon: redux,
+		name: 'Redux',
+		level: '65',
+	},
+
+	{
 		icon: node,
 		name: 'NodeJS',
 		level: '50',
@@ -33,16 +40,7 @@ const languages = [
 		name: 'MongoDB',
 		level: '80',
 	},
-	{
-		icon: material,
-		name: 'Material UI',
-		level: '85',
-	},
-	{
-		icon: bootstrap,
-		name: 'Bootstrap',
-		level: '85',
-	},
+
 	{
 		icon: html,
 		name: 'HTML',
@@ -75,6 +73,17 @@ const tools = [
 		icon: framer,
 		name: 'Framer Motion',
 		level: '60',
+	},
+
+	{
+		icon: material,
+		name: 'Material UI',
+		level: '85',
+	},
+	{
+		icon: bootstrap,
+		name: 'Bootstrap',
+		level: '85',
 	},
 ];
 
