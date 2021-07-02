@@ -10,6 +10,10 @@ import progressSteps from '../../assets/projects_images/progress-steps.webp';
 import rotationalNavigation from '../../assets/projects_images/rotational-navigation.webp';
 import tinDog from '../../assets/projects_images/tinDog.webp';
 import crownClothing from '../../assets/projects_images/crown-clothing.webp';
+import splitLanding from '../../assets/projects_images/split-landing-page.webp';
+import scrollAnimation from '../../assets/projects_images/scroll-animation.webp';
+import formWave from '../../assets/projects_images/form-wave-animation.webp';
+import blurryLoading from '../../assets/projects_images/blurry-loading.webp';
 
 const data_projects = [
 	{
@@ -122,6 +126,42 @@ const data_projects = [
 		category: ['vanilla', 'css', 'html'],
 		discription:
 			'Step by step progress to be used in other projects, using vanillaJS',
+	},
+
+	{
+		name: 'Form Wave Animation',
+		image: formWave,
+		deployed_url: 'https://zeapherine.github.io/form-wave-animation/',
+		github_url: 'https://github.com/zeapherine/form-wave-animation',
+		category: ['vanilla', 'css', 'html'],
+		discription:
+			'Main Take away: Use javascript to target the labels with querySelectorAll split the innerText and map each letter on it and wrap each letter with span, assign it to label.innerHTML by joining it again, add css transitions on each span to move up with a delay on each one.',
+	},
+	{
+		name: 'Split Landing',
+		image: splitLanding,
+		deployed_url: 'https://zeapherine.github.io/split-landing-page/',
+		github_url: 'https://github.com/zeapherine/split-landing-page',
+		category: ['vanilla', 'css', 'html'],
+		discription:
+			'Landing page increase and decrease with mouse hover. Main take away is changing the div width with transition based on mouse hover',
+	},
+	{
+		name: 'Blurry Loading',
+		image: blurryLoading,
+		deployed_url: 'https://zeapherine.github.io/blurry-loading/',
+		github_url: 'https://github.com/zeapherine/blurry-loading',
+		category: ['vanilla', 'css', 'html'],
+		discription:
+			'Blurry loading implemented using javascript and css. Main take away from this project is how to map two a range of number with another range of number',
+	},
+	{
+		name: 'Scroll Animation',
+		image: scrollAnimation,
+		deployed_url: 'https://zeapherine.github.io/scroll-animation/',
+		github_url: 'https://github.com/zeapherine/scroll-animation',
+		category: ['vanilla', 'css', 'html'],
+		discription: 'Scroll animation using by window innerHeight property',
 	},
 ];
 
