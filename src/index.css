@@ -471,6 +471,7 @@ a:hover {
 @media (max-width: 504px) {
 	.projects-navbar {
 		overflow-x: scroll;
+		overflow-y: hidden;
 		margin-bottom: 20px;
 	}
 
